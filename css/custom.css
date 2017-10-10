@@ -1,0 +1,105 @@
+/* Body, Containers, Wrappers */
+html, body {
+	background: #eee;
+	color: #231f20;
+	font-family: hnltstd, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.25em;
+	text-transform: lowercase;
+}
+@media (max-width: 575px){
+	html, body { font-size: 16px; }
+}
+html, body, .container-full, .container-wrap {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.container-wrap td { 
+	vertical-align: middle; 
+	text-align: center;
+}
+/* Main Section */
+div#main-gradient{
+	background: #fff;
+	background: -webkit-linear-gradient(#fff,#eee);
+	background: -o-linear-gradient(#fff,#eee);
+	background: -moz-linear-gradient(#fff,#eee);
+	background: linear-gradient(#fff,#eee);
+}
+td#main { 
+	background-image: url(../img/scroll-down.svg);
+	background-size: 2.5em;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+img#zip {
+	width: 100%;
+	max-width: 4em;
+}
+td#main h1 {
+	font-size: 10.5em;
+	line-height: 100%;
+	font-weight: 200;
+	margin-bottom: 16px;
+}
+@media (max-width: 1199px) { td#main h1 { font-size: 8em; margin-bottom: 12px; } }
+@media (max-width: 991px)  { td#main h1 { font-size: 6.5em; margin-bottom: 8px; } }
+@media (max-width: 767px)  { td#main h1 { font-size: 4.5em;  margin-bottom: 6px; } }
+@media (max-width: 575px)  { td#main h1 { font-size: 3em; font-weight: 300; margin-bottom: 2px; }
+}
+td#main img, td#main h1, td#main p {
+	opacity: 0;
+	animation-name: animain;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+td#main img { animation-delay: 0.5s; }
+td#main h1  { animation-delay: 1.5s; }
+td#main p   { animation-delay: 2.5s; }
+@keyframes animain {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+a#scroll {
+	z-index: 99999;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 3em;
+}
+/* Info Section */
+img.guy {
+	width: 100%;
+	max-width: 6em;
+	margin-top: -2px;
+	margin-bottom: 4px;
+}
+@media (width: 1199px) { img.guy { max-width: 5em; } }
+span.user { font-size: 125%; }
+span.name { 
+  font-size: 87.5%;
+  opacity: 0.5; 
+}
+div.download { margin-top: 2.5em; }
+a.download, a.download:visited, a.download-min, a.download-min:visited {
+	color: #09f;
+	background: rgba(0,0,0,0);
+	text-decoration: none;
+	transition: 0.15s ease-in-out;
+}
+a.download {
+  font-weight: 300;
+	font-size: 5em;
+}
+a.download:hover, a.download:active, a.download-min:hover, a.download-min:active {
+	color: #08e;
+	text-shadow: rgba(0,0,0,0.25) 0 0.025em 0.05em;
+}
+@media (max-width: 991px) { a.download { font-size: 4em; } }
+@media (max-width: 575px) { a.download { font-size: 3.5em; } }
