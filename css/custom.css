@@ -76,11 +76,17 @@ a#scroll {
 /* Info Section */
 img.guy {
 	width: 100%;
-	max-width: 6em;
+  height: auto;
 	margin-top: -2px;
 	margin-bottom: 4px;
 }
-@media (width: 1199px) { img.guy { max-width: 5em; } }
+img.helper {
+	width: 100%;
+  height: auto;
+	max-width: 5em;
+	margin-top: -2px;
+	margin-bottom: 4px;
+}
 span.user { font-size: 125%; }
 span.name { 
   font-size: 87.5%;
