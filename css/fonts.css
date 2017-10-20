@@ -8,7 +8,6 @@
          url('../fonts/hnltstd-200.ttf') format('truetype'),
          url('../fonts/hnltstd-200.svg#hnltstd-200') format('svg');
 }
-
 @font-face {
     font-family: 'hnltstd';
 		font-weight: 300;
@@ -19,7 +18,6 @@
          url('../fonts/hnltstd-300.ttf') format('truetype'),
          url('../fonts/hnltstd-300.svg#hnltstd-300') format('svg');
 }
-
 @font-face {
     font-family: 'hnltstd';
 		font-weight: normal;
@@ -29,4 +27,14 @@
          url('../fonts/hnltstd-400.woff') format('woff'),
          url('../fonts/hnltstd-400.ttf') format('truetype'),
          url('../fonts/hnltstd-400.svg#hnltstd-400') format('svg');
+}
+@font-face {
+    font-family: 'hnltstd';
+		font-weight: bold;
+    src: url('../fonts/hnltstd-700.eot');
+    src: url('../fonts/hnltstd-700.eot') format('embedded-opentype'),
+         url('../fonts/hnltstd-700.woff2') format('woff2'),
+         url('../fonts/hnltstd-700.woff') format('woff'),
+         url('../fonts/hnltstd-700.ttf') format('truetype'),
+         url('../fonts/hnltstd-700.svg#hnltstd-700') format('svg');
 }
