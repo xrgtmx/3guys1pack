@@ -8,12 +8,6 @@ html, body {
 	line-height: 1.2em;
 	text-transform: lowercase;
 }
-@media (max-width: 575px){
-	html, body { 
-    font-size: 16px;
-    line-height: 1.1em;
-  }
-}
 html, body, .container-full, .container-wrap {
 	height: 100%;
 	width: 100%;
@@ -22,10 +16,13 @@ html, body, .container-full, .container-wrap {
 	border: 0;
 }
 h2 { 
-  font-size: 150% 
+  font-size: 150%;
 }
 h3 { 
-  font-size: 125% 
+  font-size: 125%;
+}
+a {
+  text-decoration: none !important;
 }
 .container-wrap td { 
 	vertical-align: middle; 
@@ -55,31 +52,6 @@ td#main h1 {
 	line-height: 100%;
 	font-weight: 200;
 	margin-bottom: 16px;
-}
-@media (max-width: 1199px) { 
-  td#main h1 { 
-    font-size: 8em; 
-    margin-bottom: 12px; 
-  } 
-}
-@media (max-width: 991px)  { 
-  td#main h1 { 
-    font-size: 6.5em; 
-    margin-bottom: 8px; 
-  } 
-}
-@media (max-width: 767px)  { 
-  td#main h1 { 
-    font-size: 4.5em; 
-    margin-bottom: 6px; 
-  } 
-}
-@media (max-width: 575px)  { 
-  td#main h1 { 
-    font-size: 3em; 
-    font-weight: 300; 
-    margin-bottom: 2px; 
-  }
 }
 td#main img, td#main h1, td#main p {
 	opacity: 0;
@@ -129,9 +101,11 @@ p.username {
 }
 span.user { 
   font-weight: bold; 
+  letter-spacing: -0.05em;
 }
 span.name { 
   font-size: 87.5%; 
+  color: #231f20;
 }
 
 /* Download Sections */
@@ -155,13 +129,111 @@ div.download a:hover, div.download a:active, a.download-min:hover, a.download-mi
 	color: #08e;
 	text-shadow: rgba(0,0,0,0.25) 0 0.025em 0.05em;
 }
-@media (max-width: 991px) { 
-  div.download a { font-size: 3.5em; } 
-}
-@media (max-width: 575px) { 
-  div.download a { font-size: 3em; } 
-}
 div.download p {
   line-height: 1em; 
   font-size: 0.875em;
+}
+
+/* Bio Pages */
+div#bio-header {
+  background: #fff; 
+  padding: 0.125em 0 0.25em; 
+  margin-bottom: 2em; 
+  box-shadow: rgba(0,0,0,0.2) 0 0.1em 0.5em;
+}
+a#top-logo {
+  color: #231f20;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: -0.03125em;
+}
+a#top-logo:after {
+  content: '3guys1pack';
+}
+a#top-logo img {
+  margin-top: -0.125em;
+  width: 1em;
+  height: auto;
+}
+div#bio-guy {
+  text-align: center;
+}
+div#bio-guy img {
+  width: 100%;
+  max-width: 10em;
+  height: auto;
+}
+div#bio-name h1 {
+  font-weight: 700;
+  font-size: 10em;
+  line-height: 1em;
+  letter-spacing: -0.05em;
+}
+div#bio-text h2 {
+  text-align: right;
+}
+p.contrib-head {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+/* Responsive Rules */
+@media (max-width: 1199px) { 
+  td#main h1 { 
+    font-size: 8em; 
+    margin-bottom: 12px; 
+  }
+  div#bio-name h1 { 
+    font-size: 8.2em; 
+  }
+}
+@media (max-width: 991px) { 
+  td#main h1 { 
+    font-size: 6.5em; 
+    margin-bottom: 8px; 
+  }
+  div.download a { 
+    font-size: 3.5em; 
+  }
+  div#bio-name h1 { 
+    font-size: 5.6em; 
+  }
+  div#bio-text h2 {
+    font-size: 125%;
+  }
+}
+@media (max-width: 767px) { 
+  td#main h1 { 
+    font-size: 4.5em; 
+    margin-bottom: 6px; 
+  }
+  div#bio-name h1 { 
+    font-size: 3.75em; 
+  }
+  div#bio-text h2 { 
+    font-size: 150%;
+    text-align: left; 
+  }
+}
+@media (max-width: 575px) {
+	html, body { 
+    font-size: 16px;
+    line-height: 1.1em;
+  } 
+  td#main h1 { 
+    font-size: 3em; 
+    font-weight: 300; 
+    margin-bottom: 2px; 
+  }
+  div.download a { 
+    font-size: 3em; 
+  } 
+  div#bio-guy img { 
+    max-width: 6em; 
+  }
+  div#bio-name h1 {
+    font-size: 3.5em;
+    text-align: center;
+  }
 }
