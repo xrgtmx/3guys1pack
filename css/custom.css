@@ -6,6 +6,14 @@
   website designed by ryan "xrgtmx" gudonis
 */
 
+/* Mobile Enhancement */
+html { 
+	-webkit-text-size-adjust: none; 
+}
+@-ms-viewport { 
+	width: device-width; 
+}
+
 /* Body, Containers, Wrappers */
 html, body {
   -webkit-appearance: none;
@@ -40,6 +48,14 @@ a {
 	vertical-align: middle; 
 	text-align: center;
 }
+.fade-in {
+  opacity: 0;
+  animation-name: animain;
+  animation-delay: 0.25s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; 
+}
 
 /* Main Section */
 div#main-gradient{
@@ -47,7 +63,7 @@ div#main-gradient{
 	background: -webkit-linear-gradient(#fff,#eee);
 	background: -o-linear-gradient(#fff,#eee);
 	background: -moz-linear-gradient(#fff,#eee);
-	background: linear-gradient(#fff,#eee);
+	background: linear-gradient(#fff 50%,#eee 100%);
 }
 td#main { 
 	background-image: url(../img/scroll-down.svg);
