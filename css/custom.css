@@ -1,5 +1,17 @@
+/*
+  Custom CSS
+  -------------------------------------------
+  3guys1pack
+  a technical simfile pack made by three guys
+  website designed by ryan "xrgtmx" gudonis
+*/
+
 /* Body, Containers, Wrappers */
 html, body {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
 	background: #eee;
 	color: #231f20;
 	font-family: hnltstd, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,7 +63,12 @@ td#main h1 {
 	font-size: 10.5em;
 	line-height: 100%;
 	font-weight: 200;
+  letter-spacing: -0.03125em;
 	margin-bottom: 16px;
+  text-shadow: 
+    rgba(255,000,000,0.25) -0.0125em 0, 
+    rgba(000,255,000,0.25)  0.005em  0.010625em, 
+    rgba(000,000,255,0.25)  0.005em -0.010625em;
 }
 td#main img, td#main h1, td#main p {
 	opacity: 0;
@@ -82,7 +99,7 @@ a#scroll {
 	height: 3em;
 }
 
-/* Info Section */
+/* Guy Section */
 img.guy {
 	width: 100%;
   height: auto;
@@ -101,6 +118,7 @@ p.username {
 }
 span.user { 
   font-weight: bold; 
+  font-size: 1.5em;
   letter-spacing: -0.05em;
 }
 span.name { 
@@ -108,7 +126,7 @@ span.name {
   color: #231f20;
 }
 
-/* Download Sections */
+/* Download Section */
 hr#download-separator {
   margin: 2em 0;
 }
@@ -143,18 +161,18 @@ div#bio-header {
 }
 a#top-logo {
   color: #231f20;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 300;
   line-height: 1.5em;
-  letter-spacing: -0.03125em;
+  text-shadow: rgba(255,0,0,0.25) -0.03em 0, rgba(0,255,0,0.25) 0.02em 0.0175em, rgba(0,0,255,0.25) 0.02em -0.0175em;
 }
 a#top-logo:after {
   content: '3guys1pack';
 }
 a#top-logo img {
-  margin-top: -0.125em;
   width: 1em;
   height: auto;
+  margin-top: -3px;
 }
 div#bio-guy {
   text-align: center;
@@ -170,12 +188,24 @@ div#bio-name h1 {
   line-height: 1em;
   letter-spacing: -0.05em;
 }
-div#bio-text h2 {
+div.bio-text h2 {
   text-align: right;
+}
+div.bio-text p {
+  line-height: 1.33em;
+}
+p.bio-testimonial {
+  font-size: 125%;
+  padding: 0.5em 0 0.5em 0.75em;
+  border-left: 4pt solid #231f20;
 }
 p.contrib-head {
   text-decoration: underline;
   margin-bottom: 0;
+}
+div.bio-text ul li {
+  line-height: 1em;
+  margin-bottom: 0.25em;
 }
 
 /* Responsive Rules */
@@ -186,6 +216,9 @@ p.contrib-head {
   }
   div#bio-name h1 { 
     font-size: 8.2em; 
+  }
+  div.bio-text h2 {
+    font-size: 125%;
   }
 }
 @media (max-width: 991px) { 
@@ -199,8 +232,9 @@ p.contrib-head {
   div#bio-name h1 { 
     font-size: 5.6em; 
   }
-  div#bio-text h2 {
-    font-size: 125%;
+  div.bio-text h2 { 
+    font-size: 150%;
+    text-align: left; 
   }
 }
 @media (max-width: 767px) { 
@@ -211,10 +245,6 @@ p.contrib-head {
   div#bio-name h1 { 
     font-size: 3.75em; 
   }
-  div#bio-text h2 { 
-    font-size: 150%;
-    text-align: left; 
-  }
 }
 @media (max-width: 575px) {
 	html, body { 
@@ -224,12 +254,16 @@ p.contrib-head {
   td#main h1 { 
     font-size: 3em; 
     font-weight: 300; 
-    margin-bottom: 2px; 
+    margin-bottom: 2px;
+    text-shadow: 
+      rgba(255,000,000,0.25) -0.025em   0, 
+      rgba(000,255,000,0.25)  0.0175em  0.015em, 
+      rgba(000,000,255,0.25)  0.0175em -0.015em; 
   }
   div.download a { 
-    font-size: 3em; 
-  } 
-  div#bio-guy img { 
+    font-size: 3em;
+  }
+  div.bio-guy img { 
     max-width: 6em; 
   }
   div#bio-name h1 {
