@@ -1,2 +1,2 @@
 # 3guys1pack
-A technical simfile pack made by three guys (ITG FA style)
+A technical simfile pack (ITG FA style) made by three guys: Benpai, Feraligatr, and Loodee
