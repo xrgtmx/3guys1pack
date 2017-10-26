@@ -1,3 +1,11 @@
+/*
+  scroll.js
+  -------------------------------------------
+  3guys1pack
+  a technical simfile pack made by three guys
+  website designed by ryan "xrgtmx" gudonis
+*/ 
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {

@@ -1,0 +1,238 @@
+/*
+  Main CSS
+  -------------------------------------------
+  3guys1pack
+  a technical simfile pack made by three guys
+  website designed by ryan "xrgtmx" gudonis
+*/
+
+/* Mobile Enhancement */
+html { 
+	-webkit-text-size-adjust: none; 
+}
+@-ms-viewport { 
+	width: device-width; 
+}
+
+/* Body, Containers, Wrappers */
+html, body {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+	background-color: #eee;
+  background-image: url(../img/3g1p-bg.svg);
+  background-size: 1px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+	color: #231f20;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2em;
+	text-transform: lowercase;
+}
+html, body, .container-full, .container-wrap {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+p, a, ul, h2, h3 { 
+  text-shadow: 
+    rgba(255,000,000,0.35) -0.05em  0, 
+    rgba(000,255,000,0.35)  0.04em  0.03em, 
+    rgba(000,000,255,0.35)  0.04em -0.03em;
+  animation-name: shadow-fun;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+h2 { 
+  font-size: 150%;
+}
+h3 { 
+  font-size: 125%;
+}
+a {
+  text-decoration: none !important;
+}
+.container-wrap td { 
+	vertical-align: middle; 
+	text-align: center;
+}
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-delay: 0.25s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; 
+}
+
+/* Main Section */
+div#main-gradient{
+	background: -webkit-linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+	background: -o-linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+	background: -moz-linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+	background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+}
+td#main { 
+	background-image: url(../img/scroll-down.svg);
+	background-size: 2.5em;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+img#zip {
+	width: 100%;
+	max-width: 4em;
+}
+td#main h1 {
+	font-size: 10.5em;
+	line-height: 100%;
+	font-weight: 200;
+  letter-spacing: -0.03125em;
+	margin-bottom: 16px;
+}
+h1, td#main h1 span {
+  text-shadow: 
+    rgba(255,000,000,0.35) -0.0125em 0, 
+    rgba(000,255,000,0.35)  0.005em  0.010625em, 
+    rgba(000,000,255,0.35)  0.005em -0.010625em;
+  animation-name: shadow-fun-main;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+td#main p {
+  margin-bottom: 0.25em; 
+  padding: 0 1em;
+  font-size: 1.5em;
+}
+td#main p span { 
+  color: #8B8989; 
+  text-transform: none;
+}
+a#scroll {
+	z-index: 99999;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 3em;
+}
+
+/* Guy Section */
+img.guy {
+	width: 100%;
+  height: auto;
+	margin-top: -2px;
+	margin-bottom: 4px;
+}
+img.helper {
+	width: 100%;
+  height: auto;
+	max-width: 5em;
+	margin-top: -2px;
+	margin-bottom: 4px;
+}
+p.username span.user { 
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: -0.05em;
+}
+p.username span.name { 
+  font-size: 87.5%; 
+  color: #231f20;
+}
+
+/* Download Section */
+hr#download-separator {
+  margin: 2em 0;
+}
+div.download { 
+  margin-top: 2em; 
+}
+div.download a, div.download a:visited, a.download-min, a.download-min:visited {
+	color: #09f;
+	background: rgba(0,0,0,0);
+	text-decoration: none;
+}
+div.download a {
+  font-weight: 300;
+	font-size: 4em;
+  animation-name: shadow-fun-main-mobile;
+}
+div.download p {
+  line-height: 1em; 
+  font-size: 0.875em;
+}
+
+/* Bio Pages */
+div#bio-header {
+	background-color: #fff;
+  background-image: url(../img/3g1p-bg2.svg);
+  background-size: 1px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 0.125em 0 0.25em; 
+  margin-bottom: 2em; 
+  box-shadow: rgba(0,0,0,0.2) 0 0.1em 0.5em;
+}
+a#top-logo {
+  color: #231f20;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-shadow: 
+    rgba(255,000,000,0.35) -0.05em  0, 
+    rgba(000,255,000,0.35)  0.04em  0.03em, 
+    rgba(000,000,255,0.35)  0.04em -0.03em;
+  animation-name: shadow-fun;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+a#top-logo:after {
+  content: '3guys1pack';
+}
+a#top-logo img {
+  width: 1em;
+  height: auto;
+  margin-top: -3px;
+}
+div#bio-guy {
+  text-align: center;
+}
+div#bio-guy img {
+  width: 100%;
+  max-width: 10em;
+  height: auto;
+}
+div#bio-name h1 {
+  font-weight: 700;
+  font-size: 10em;
+  line-height: 1em;
+  letter-spacing: -0.05em;
+  text-shadow: none;
+}
+div.bio-text h2 {
+  text-align: right;
+}
+div.bio-text p {
+  line-height: 1.33em;
+}
+p.bio-testimonial {
+  font-size: 125%;
+  padding: 0.5em 0 0.5em 0.75em;
+  border-left: 4pt solid #231f20;
+}
+p.contrib-head {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+div.bio-text ul li {
+  line-height: 1em;
+  margin-bottom: 0.25em;
+}

@@ -1,0 +1,90 @@
+/*
+  CSS3 Animations
+  -------------------------------------------
+  3guys1pack
+  a technical simfile pack made by three guys
+  website designed by ryan "xrgtmx" gudonis
+*/
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@keyframes shadow-fun {
+  0% {
+    text-shadow: 
+      rgba(255,000,000,0.35) -0.05em  0, 
+      rgba(000,255,000,0.35)  0.04em  0.03em, 
+      rgba(000,000,255,0.35)  0.04em -0.03em;
+  }
+  33.3333% {
+    text-shadow: 
+      rgba(255,000,000,0.35)  0.04em  0.03em, 
+      rgba(000,255,000,0.35)  0.04em -0.03em,
+      rgba(000,000,255,0.35) -0.05em  0;
+  }
+  66.6667% {
+    text-shadow: 
+      rgba(255,000,000,0.35)  0.04em -0.03em, 
+      rgba(000,255,000,0.35) -0.05em  0,
+      rgba(000,000,255,0.35)  0.04em  0.03em;
+  }
+  100% {
+    text-shadow: 
+      rgba(255,000,000,0.35) -0.05em  0, 
+      rgba(000,255,000,0.35)  0.04em  0.03em, 
+      rgba(000,000,255,0.35)  0.04em -0.03em;
+  }
+}
+@keyframes shadow-fun-main {
+  0% {
+    text-shadow: 
+      rgba(255,000,000,0.35) -0.0125em 0, 
+      rgba(000,255,000,0.35)  0.005em  0.010625em, 
+      rgba(000,000,255,0.35)  0.005em -0.010625em;
+  }
+  33.3333% {
+    text-shadow: 
+      rgba(255,000,000,0.35)  0.005em  0.010625em, 
+      rgba(000,255,000,0.35)  0.005em -0.010625em, 
+      rgba(000,000,255,0.35) -0.0125em 0;
+  }
+  66.6667% {
+    text-shadow: 
+      rgba(255,000,000,0.35)  0.005em -0.010625em, 
+      rgba(000,255,000,0.35) -0.0125em 0, 
+      rgba(000,000,255,0.35)  0.005em  0.010625em;
+  }
+  100% {
+    text-shadow: 
+      rgba(255,000,000,0.35) -0.0125em 0, 
+      rgba(000,255,000,0.35)  0.005em  0.010625em, 
+      rgba(000,000,255,0.35)  0.005em -0.010625em;
+  }
+}
+@keyframes shadow-fun-main-mobile {
+  0% {
+    text-shadow: 
+      rgba(255,000,000,0.35) -0.03em    0, 
+      rgba(000,255,000,0.35)  0.0175em  0.015em, 
+      rgba(000,000,255,0.35)  0.0175em -0.015em; 
+  }
+  33.3333% {
+    text-shadow: 
+      rgba(255,000,000,0.35)  0.0175em  0.015em,
+      rgba(000,255,000,0.35)  0.0175em -0.015em, 
+      rgba(000,000,255,0.35) -0.03em    0; 
+  }
+  66.6667% {
+    text-shadow: 
+      rgba(255,000,000,0.35)  0.0175em -0.015em, 
+      rgba(000,255,000,0.35) -0.03em    0, 
+      rgba(000,000,255,0.35)  0.0175em  0.015em; 
+  }
+  100% {
+    text-shadow: 
+      rgba(255,000,000,0.35) -0.03em    0, 
+      rgba(000,255,000,0.35)  0.0175em  0.015em, 
+      rgba(000,000,255,0.35)  0.0175em -0.015em; 
+  }
+}

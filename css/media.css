@@ -1,0 +1,98 @@
+/*
+  Responsive Media Queries
+  -------------------------------------------
+  3guys1pack
+  a technical simfile pack made by three guys
+  website designed by ryan "xrgtmx" gudonis
+*/
+
+@media (max-width: 1199px) { 
+  td#main h1 { 
+    font-size: 8em; 
+    margin-bottom: 12px; 
+  }
+  td#main p {
+    font-size: 1.25em;
+  }
+  p.username span.user {
+    font-size: 1.875em;
+  }
+  div#bio-name h1 { 
+    font-size: 8.2em; 
+  }
+  div.bio-text h2 {
+    font-size: 125%;
+  }
+}
+@media (max-width: 991px) { 
+  td#main h1 { 
+    font-size: 6.5em; 
+    margin-bottom: 8px; 
+  }
+  td#main p {
+    font-size: 1.125em;
+  }
+  div.download a { 
+    font-size: 3.5em; 
+  }
+  p.username span.user {
+    font-size: 1.75em;
+  }
+  div#bio-name h1 { 
+    font-size: 5.6em; 
+  }
+  div.bio-text h2 { 
+    font-size: 150%;
+    text-align: left; 
+  }
+}
+@media (max-width: 767px) { 
+  td#main h1 { 
+    font-size: 4.5em; 
+    margin-bottom: 6px; 
+  }
+  td#main p {
+    font-size: 1em;
+  }
+  div#bio-name h1 { 
+    font-size: 3.75em; 
+  }
+  p.username span.user {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 575px) {
+	html, body { 
+    font-size: 16px;
+    line-height: 1.1em;
+  } 
+  td#main h1 { 
+    font-size: 3em; 
+    font-weight: 300; 
+    margin-bottom: 2px;
+  }
+  td#main h1 span {
+    text-shadow: 
+      rgba(255,000,000,0.25) -0.03em    0, 
+      rgba(000,255,000,0.25)  0.0175em  0.015em, 
+      rgba(000,000,255,0.25)  0.0175em -0.015em; 
+    animation-name: shadow-fun-main-mobile;
+  }
+  p.username {
+    padding-top: 0.33em;
+  }
+  p.username span.user {
+    font-size: 2em;
+  }
+  div.download a { 
+    font-size: 3em;
+    animation-name: shadow-fun;
+  }
+  div.bio-guy img { 
+    max-width: 6em; 
+  }
+  div#bio-name h1 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
