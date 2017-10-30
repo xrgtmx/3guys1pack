@@ -190,7 +190,7 @@ a#top-logo {
     rgba(000,255,000,0.35)  0.04em  0.03em, 
     rgba(000,000,255,0.35)  0.04em -0.03em;
   animation-name: shadow-fun;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
