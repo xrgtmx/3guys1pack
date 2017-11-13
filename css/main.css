@@ -236,3 +236,12 @@ div.bio-text ul li {
   line-height: 1em;
   margin-bottom: 0.25em;
 }
+
+/* Download Page */
+div.bio-text a.download {
+  font-weight: 300;
+  font-size: 350%;
+}
+div.bio-text a.download-min {
+  font-size: 150%;
+}
